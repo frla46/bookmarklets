@@ -1,4 +1,4 @@
-(function () {
+javascript: (function () {
   var e = document.createElement("textarea");
   var title = document.title
     .replace(/\[/g, "\\[")

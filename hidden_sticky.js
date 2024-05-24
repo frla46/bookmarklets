@@ -1,4 +1,4 @@
-(function () {
+javascript: (function () {
   var i,
     elements = document.querySelectorAll("body *");
 

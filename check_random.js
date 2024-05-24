@@ -1,1 +1,18 @@
-(e=>{const a={};[].forEach.call(document.querySelectorAll(\"[type=radio],[type=checkbox]\"),e=>{e.name&&(void 0===a[e.name]&&(a[e.name]=[]),a[e.name].push(e))}),Object.keys(a).forEach(e=>{a[e][Math.floor(Math.random()*a[e].length)].click()})})();
+javascript: (function () {
+  const inputs = Array.from(
+    document.querySelectorAll("[type=radio], [type=checkbox]"),
+  );
+  const groups = {};
+  inputs.forEach((input) => {
+    if (input.name && !groups[input.name]) {
+      groups[input.name] = [];
+    }
+    if (!groups[input.name]) return;
+    groups[input.name].push(input);
+  });
+  Object.keys(groups).forEach((groupName) => {
+    const randomInput =
+      groups[groupName][Math.floor(Math.random() * groups[groupName].length)];
+    randomInput.click();
+  });
+})();

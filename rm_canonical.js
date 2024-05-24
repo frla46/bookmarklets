@@ -1,1 +1,3 @@
-location.href = document.querySelector('link[rel="canonical"]').href;
+javascript: (function () {
+  location.href = document.querySelector('link[rel="canonical"]').href;
+})();

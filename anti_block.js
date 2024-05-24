@@ -1,4 +1,4 @@
-(function () {
+javascript: (function () {
   var d = document,
     s = [
       "user-select",
