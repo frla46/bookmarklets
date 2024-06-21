@@ -1,3 +1,5 @@
+// 右クリ禁止解除・コピー禁止解除
+
 javascript: (function () {
   var d = document,
     s = [

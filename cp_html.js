@@ -1,3 +1,5 @@
+// 開いているページのHTMLをコピーする
+
 javascript: (function () {
   var e = document.createElement("textarea");
   e.value = document.documentElement.innerHTML;

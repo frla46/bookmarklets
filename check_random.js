@@ -1,3 +1,5 @@
+// checkboxをランダムに選択する
+
 javascript: (function () {
   const inputs = Array.from(
     document.querySelectorAll("[type=radio], [type=checkbox]"),

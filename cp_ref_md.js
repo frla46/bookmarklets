@@ -1,3 +1,5 @@
+// 開いているページのタイトルとURLをmarkdown形式でコピーする
+
 javascript: (function () {
   var e = document.createElement("textarea");
   var title = document.title
