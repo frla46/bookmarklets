@@ -1,10 +1,11 @@
 // 開いているページのHTMLをコピーする
 
 javascript: (function () {
-  var e = document.createElement("textarea");
-  e.value = document.documentElement.innerHTML;
-  document.body.appendChild(e);
-  e.select();
-  document.execCommand("copy");
-  document.body.removeChild(e);
+  var html = document.documentElement.outerHTML;
+  var newWindow = window.open();
+  newWindow.document.open();
+  newWindow.document.write(
+    "<pre>" + html.replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</pre>",
+  );
+  newWindow.document.close();
 })();
